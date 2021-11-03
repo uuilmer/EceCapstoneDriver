@@ -44,16 +44,16 @@ public:
         VRProperties()->SetInt32Property(props, Prop_ControllerRoleHint_Int32, TrackedControllerRole_LeftHand);
 
         m_active = true;
-        m_pose_thread = std::thread([]()
+        m_pose_thread = std::thread([&]()
                                     {
                                         while (true)
                                         {
-                                            //     m_frame_count++;
-                                            //     m_pose.vecPosition[0] = 30;
-                                            //     m_pose.vecPosition[1] = 30;
-                                            //     m_pose.vecPosition[2] = 30;
-                                            //     VRServerDriverHost()->TrackedDevicePoseUpdated(driverId, m_pose, sizeof(DriverPose_t));
-                                            //     this_thread::sleep_for(chrono::milliseconds(11));
+                                            m_frame_count++;
+                                            m_pose.vecPosition[0] = 30;
+                                            m_pose.vecPosition[1] = 30;
+                                            m_pose.vecPosition[2] = 30;
+                                            VRServerDriverHost()->TrackedDevicePoseUpdated(driverId, m_pose, sizeof(DriverPose_t));
+                                            this_thread::sleep_for(chrono::milliseconds(11));
                                         }
                                     });
 
