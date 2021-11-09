@@ -1,0 +1,23 @@
+{
+  "jsonid": "input_profile",
+  "controller_type": "right_hand_pose",
+  "legacy_profile": "right_hand_pose",
+  "legacy_binding" :  "{right_hand_pose}/input/legacy_bindings_right_hand_pose.json",
+  "input_bindingui_mode" : "controller_handed",
+  "input_bindingui_left" :
+  {
+    "image": "{right_hand_pose}/icons/right_hand_test.svg"
+  },
+  "input_bindingui_right" :
+  {
+    "image": "{right_hand_pose}/icons/right_hand_test.svg"
+  },
+  "input_source" :
+  {
+    "/pose/raw" : {
+        "type" : "pose",
+        "binding_image_point" : [ 5, 35 ]
+    }
+  }
+ }
+
