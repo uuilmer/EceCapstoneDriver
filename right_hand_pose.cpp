@@ -44,7 +44,7 @@ public:
         VRProperties()->SetInt32Property(props, Prop_ControllerRoleHint_Int32, TrackedControllerRole_LeftHand);
 
         m_active = true;
-        m_pose_thread = std::thread([&]()
+        m_pose_thread = thread([&]()
                                     {
                                         while (true)
                                         {
