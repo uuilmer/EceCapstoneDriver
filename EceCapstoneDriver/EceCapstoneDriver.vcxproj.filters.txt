@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="right_hand_pose.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="openvr_driver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="right_hand\resources\input\right_hand_pose_profile.json" />
+    <None Include="right_hand\driver.vrdrivermanifest" />
+    <None Include="right_hand\resources\icons\right_hand_test.svg" />
+    <None Include="right_hand\resources\input\legacy_bindings_right_hand_pose.json" />
+  </ItemGroup>
+</Project>

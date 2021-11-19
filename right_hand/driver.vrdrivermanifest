@@ -1,7 +1,0 @@
-{
-	"alwaysActivate": true,
-	"name" : "right_hand_pose",
-	"directory" : "",
-	"resourceOnly" : false,
-	"hmd_presence" : []
-}
